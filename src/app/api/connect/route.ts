@@ -5,5 +5,5 @@ export async function GET() {
   const res = await fetch(env.NEXT_PUBLIC_STUDIO_ENDPOINT);
   const data = await res.json();
 
-  return NextResponse.json({ data: data });
+  return NextResponse.json(data);
 }
